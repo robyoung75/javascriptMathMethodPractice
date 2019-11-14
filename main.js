@@ -20,6 +20,34 @@ var improvedNum = (bigDecimal * 10) + 1;
 var wholeRandomNum = Math.floor(improvedNum); //logs a round number of 1 through 10.
 console.log(wholeRandomNum); //returns a random whole number between 1 and 10
 
+//parseInt and parseFloat example.
+
+//parseInt converts a string like "12.8" to 12. parseInt drops the decimal, no rounding.
+//if two numbers are included in a string all math operators accept + will result in the strings being converted to numbers.
+//a + symbol will require parseInt or parseFloat or you will get a concatenated string.
+
+var num = "12.69"
+var newNum = parseInt(num);
+console.log(newNum); //logs 12
+
+//parseFloat converts a string like "12.8" to 12.8. parseFloat keeps the decimals.
+
+var num = "12.69"
+var newNum = parseFloat(num);
+console.log(newNum); //logs 12.69
+
+//a + symbol will require parseInt or parseFloat or you will get a concatenated string.
+var currentAge = "44";
+var qualifyingAge = currentAge + 1;
+console.log(qualifyingAge); //logs 441
+
+var currentAge = "44";
+var qualifyingAge = parseInt(currentAge) + 1;
+console.log(qualifyingAge); //logs 45
+
+
+
+
 
 
 
