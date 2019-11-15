@@ -55,6 +55,36 @@ console.log(Number(str) + Number(str));//logs 16 as a number
 
 
 
+//.toFixed() example.
+var taxRate = .065;
+var price = 9.95;
+var total = price + (price * taxRate);
+var roundTotal = total.toFixed(2);//toFixed(2) trims the decimal to two places and converts number to string.
+var totalCurrency = "$" + roundTotal;
+console.log(total);//logs 10.59675
+console.log(roundTotal); //logs 10.60
+console.log(totalCurrency);//logs $10.60
+
+var num = 1.555
+var roundNum = num.toFixed(2);
+console.log(roundNum); //logs 1.55 as a string but should log 1.56. A fix is listed below.
+
+var str = num.toString();//converts num to string and assigns to str.
+console.log(str);//converts num to a string.
+if (str.charAt(str.length - 1) === "5") {
+    str = str.slice(0, str.length - 1) + "6";
+} //if the last character of str is "5" slices and copies all but the last digit and assigns to string and appends "6" to the end.
+
+num = Number(str);//converts str back to a number
+finalNum = num.toFixed(2);//trims number to two decimal places
+console.log(finalNum);
+
+
+
+
+
+
+
 
 
 
