@@ -45,6 +45,15 @@ var currentAge = "44";
 var qualifyingAge = parseInt(currentAge) + 1;
 console.log(qualifyingAge); //logs 45
 
+//.toString() converts a number to a string.
+var num = 8;
+console.log(num.toString() + num.toString());//logs 88 as a string
+
+//Number() converts a string to a number.
+var str = "8";
+console.log(Number(str) + Number(str));//logs 16 as a number
+
+
 
 
 
